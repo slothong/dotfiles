@@ -1,4 +1,4 @@
-local required_servers = { "ts_ls", "stylua" }
+local required_servers = { "ts_ls", "stylua", "angularls" }
 
 return {
   {
@@ -18,6 +18,7 @@ return {
 
       local settings = setmetatable({
         ts_ls = { capabilities = cmp_capabilities },
+        angularls = { capabilities = cmp_capabilities },
       }, {
         __index = function()
           return {}

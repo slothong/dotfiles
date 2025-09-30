@@ -3,18 +3,14 @@ return {
   opts = {
     formatters_by_ft = {
       lua = { "stylua" },
-      javascript = { "prettierd", "prettier", "eslint_d" },
-      javascriptreact = { "prettierd", "prettier", "eslint_d" },
-      typescript = { "prettierd", "prettier", "eslint_d" },
-      typescriptreact = { "prettierd", "prettier", "eslint_d" },
+      javascript = { "prettierd", "eslint_d" },
+      javascriptreact = { "prettierd", "eslint_d" },
+      typescript = { "prettierd", "eslint_d" },
+      typescriptreact = { "prettierd", "eslint_d" },
     },
     formatters = {
       stylua = {
         prepend_args = { "--indent-type=spaces", "--indent-width=2" },
-      },
-      prettier = {
-        require_cwd = true,
-        stop_after_first = true,
       },
       prettierd = {
         require_cwd = true,

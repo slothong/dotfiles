@@ -5,7 +5,11 @@ return {
     local catppuccin = require("catppuccin")
     catppuccin.setup({
       flavour = "macchiato",
-      auto_integrations = true,
+      integrations = {
+        cmp = true,
+        gitsigns = true,
+        treesitter = true,
+      },
     })
     vim.cmd.colorscheme("catppuccin")
   end,

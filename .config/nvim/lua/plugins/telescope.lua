@@ -8,8 +8,8 @@ return {
     vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 
     require("telescope").setup({
-
       defaults = {
+        file_ignore_patterns = { "node_modules" },
         mappings = {
           n = {
             ["<c-d>"] = require("telescope.actions").delete_buffer,

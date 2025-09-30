@@ -4,7 +4,6 @@ return {
   opts = function()
     vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
     local cmp = require("cmp")
-    local defaults = require("cmp.config.default")()
     return {
       completion = {
         completeopt = "menu,menuone,noinsert",
@@ -15,6 +14,7 @@ return {
       mapping = cmp.mapping.preset.insert({
         ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
         ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
+        ["<CR>"] = cmp.mapping.confirm({ select = true }),
       }),
     }
   end,

@@ -14,3 +14,5 @@ vim.diagnostic.config({
     prefix = "●",
   },
 })
+
+vim.api.nvim_set_option("clipboard", "unnamed")

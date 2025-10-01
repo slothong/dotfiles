@@ -17,6 +17,10 @@ return {
         delay = 300,
         ignore_whitespace = false,
       },
+      current_line_blame_formatter = "    <author>, <author_time:%R> - <summary>",
+      preview_config = {
+        border = "rounded",
+      },
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
         local function map(mode, l, r, opts)

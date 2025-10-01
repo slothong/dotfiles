@@ -16,3 +16,5 @@ vim.diagnostic.config({
 })
 
 vim.api.nvim_set_option("clipboard", "unnamed")
+
+vim.opt.laststatus = 3

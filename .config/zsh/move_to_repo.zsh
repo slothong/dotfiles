@@ -4,7 +4,6 @@ function move_to_repo() {
 
   if [ -n "$selected_repository" ]; then
     cd "$selected_repository" || return
-    echo "$selected_repository"
 
     #  프롬프트 직전에 실행되는 함수들을 실행한다.
     for hook in "${precmd_functions[@]}"; do

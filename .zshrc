@@ -17,6 +17,7 @@ export PATH="$HOME/.scripts:/usr/local/bin:/opt/homebrew/bin:$PATH"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -121,6 +122,6 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 
 
 ## Custom functions
-source ~/.zsh/move_to_repo.zsh
-source ~/.zsh/keybindings.zsh
+source ~/.config/zsh/move_to_repo.zsh
+source ~/.config/zsh/keybindings.zsh
 

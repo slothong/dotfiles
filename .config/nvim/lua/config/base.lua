@@ -7,6 +7,8 @@ vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.opt.mouse = "a"
 vim.opt.signcolumn = "yes:1"
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.diagnostic.config({
   virtual_text = {
